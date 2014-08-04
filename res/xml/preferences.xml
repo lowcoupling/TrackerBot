@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_tracking_service"
+        android:title="Tracking Service" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="tracking_always_on"
+            android:summary="Starts the Tracking Service when you power on your smartphone"
+            android:title="Starts at Boot" />
+          <EditTextPreference
+            android:defaultValue="1"
+            android:dialogMessage="Set The Position Refresh Period in minutes"
+            android:dialogTitle="Position Refresh Period"
+            android:key="position_refresh_period"
+            android:summary="Position Refresh Period (default is 1 minute)"
+            android:title="Position Refresh Period" />
+    </PreferenceCategory>
+    
+     <PreferenceCategory
+        android:key="pref_key_social"
+        android:title="SMS/Hangout" >
+         <CheckBoxPreference
+        android:key="sms_on"
+        android:title="Share with SMS/Hangout"
+        android:summary="Shares your location related events with your contacts. 
+        A SMS will be sent to the specified contacts whenever you get in and out of a Location.
+        Costs depend on your Carrier !"
+        android:defaultValue="true" />
+         
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogMessage="Please enter the number starting with + and related country code"
+            android:dialogTitle="Phone Number"
+            android:key="sms_1"
+            android:summary="Phone Number"
+            android:title="Phone Number" />
+    </PreferenceCategory>
+    
+    
+
+</PreferenceScreen>

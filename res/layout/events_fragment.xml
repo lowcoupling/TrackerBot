@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:layout_margin="10dp"
+        android:textColor="#C3EBFA"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+    </ListView>
+
+    <TextView
+            android:id="@+id/label"
+            android:layout_width	="fill_parent"
+            android:layout_height	="0dip"
+            android:layout_weight="0.5"
+            android:gravity			="center"
+            android:text="event icons by http://glyphicons.com/"
+            android:lines="10"
+            android:textSize="15sp"
+             >
+        </TextView>
+        
+    <Button
+        android:id="@+id/button1"
+        style="@style/AppBaseTheme"
+        android:layout_width="fill_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dip"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_shape"
+        android:lines="@integer/abc_max_action_buttons"
+        android:text="Delete All"
+        android:textSize="30sp" />
+
+</LinearLayout>
